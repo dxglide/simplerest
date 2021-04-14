@@ -8,14 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/")
 public class ApiController {
 
-//    @GetMapping(path="/", produces = "application/json")
-//    public String getdefault () {
-//        return "{ \"answer\" : DEFAULT }";
-//    }
-
     @GetMapping(path="/hello", produces = "application/json")
     public String  getHello() {
-        return "{ \"answer\" : Hello }";
+        return "{ \"answer\" : \"Hello\" }";
     }
 
 }
